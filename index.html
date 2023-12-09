@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Login In Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Modal Login Form</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="login">Log In</button>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img1-2.jpg" alt="avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter your name" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter the password" name="psw" required>
+                
+                <button type="submit" class="signin">Login</button>
+                <label>
+                    <input type="checkbox" name="remember" checked = "checked">Remember me
+                </label>
+            </div>
+            <div class="cont">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forget<a href="#"> Password?</a></span>
+            </div>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
